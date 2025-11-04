@@ -67,5 +67,5 @@
 - ``git stash pop``  ***to merge the local changes,***
 - ``git status``     ***to view the conflicts, if conficts are there tne resolve them manuall***
 - ``git add .``  ***to put all the changes in staging***
-- ``git commit -m "message/comments"  ***to commit the changes***
+- ``git commit -m "message/comments"``  ***to commit the changes***
 - ``git push``
