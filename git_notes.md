@@ -7,8 +7,8 @@
 - ``git commit -m "message for commit"`` 						***to commit the changes)***
 - ``git push``																		***to push the changes at repository***
 
-To merge Pre-Production with Production
----------------------------------------
+## To merge Pre-Production with Production
+
 - ``git checkout Production``
 - ``git pull origin Production``
 - ``git merge Pre-Production``
@@ -21,7 +21,7 @@ To merge Pre-Production with Production
 - ``git switch Production``  ***to switch to a branch named Production***
 - ``git stash pop``  ***After switch back to previous branch for example, pre-production, use ```git stash pop``` to restore the local changes*** 
 
-# Create a local branch "Production" from remote
+## Create a local branch "Production" from remote
 - ``git checkout -b Production origin/Production``
 - ``git checkout -b Pre-Production origin/Pre-Production``
 
@@ -34,7 +34,7 @@ To merge Pre-Production with Production
 - ``git restore -s origin/Pre-Production``  ***server/joiSchema.js***
 
 
-# Merge Pre-Production into Production
+## Merge Pre-Production into Production
 - ``git merge origin/Pre-Production``
 
 - ``git checkout origin/Production -- Configurations.py``		  ***revert just Configurations.py back to Production’s version***
@@ -60,3 +60,12 @@ To merge Pre-Production with Production
 - ``git fetch origin``														
 - ``git reset --hard origin/Pre-Production``		***to over write local changes forcefully***
 
+## To get changes from remote and merge with local changes.
+-- ``git add .`` ***to add all the changed files in stage locally***
+-- ``git stash`` ***to put the local changes in stash***
+-- ``git pull Pre-Production``  ***to pull all changes of Pre-Production***
+-- ``git stash pop``  ***to merge the local changes,***
+-- ``git status``     ***to view the conflicts, if conficts are there tne resolve them manuall***
+-- ``git add .``  ***to put all the changes in staging***
+-- ``git commit -m "message/comments"  ***to commit the changes***
+-- ``git push``
