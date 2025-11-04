@@ -69,3 +69,4 @@
 - ``git add .``  ***to put all the changes in staging***
 - ``git commit -m "message/comments"``  ***to commit the changes***
 - ``git push``
+- ``git restore --staged logs/logs.log``  ***to remove a specific file from staging***
