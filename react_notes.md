@@ -10,3 +10,7 @@
 ### use State
 ### use Effect
 ### use Ref
+### Node Modules Installation Problem
+- ```rm -rf node_modules package-lock.json```
+- ```npm cache clean --force```
+- ```npm install```
