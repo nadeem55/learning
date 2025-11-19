@@ -1,5 +1,5 @@
 # Java
-## JVM (Java Virtual Machinge) Tunning
+## Memory Types (Stack & Heap)
 - Statck & Heap
 - Stack contains variables and objects
 - Heap
@@ -21,9 +21,17 @@
   - Stop the World (pause the application)
   - Concurrent
 - Different Garbage Collectors
-  - Serial GC
-  - Parallel GC
-  - CMS GC (Concurrent, Marking and Sweep)
-  - G1 GC (Garbage-first)
-  - Z GC 
+  - Serial GC  - single threaded
+  - Parallel GC - multi threaded
+  - CMS GC (Concurrent, Marking and Sweep) - multi threaded
+  - G1 GC (Garbage-first) - multi threaded
+  - Z GC
+      - maximum pause is 10ms
+      - Available since Java 15
+      - Multi threaded and Concurrent
+      - Only aplicable to 64bit system
+## JVM (Java Virtual Machinge) Tunning
+- How the heap is functioning
+- What is the latency rate
+- What is throughput
         
