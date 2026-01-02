@@ -36,4 +36,4 @@
 - What is throughput
         
 ## To Change Installed JDK Version
-- sudo update-alternatives --config java ```if multiple JDK are installed then this command is used to show and change default JDK```
+- ```sudo update-alternatives --config java``` if multiple JDK are installed then this command is used to show and change default JDK
